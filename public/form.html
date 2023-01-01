@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        #table {
+            border: 1px solid black;
+            background-color: chocolate;
+            width: 600px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table border=1px id="table" align="center" cellspacing=0;>
+            <form>
+                <tr>
+                    <td><label for="nm">Employee Name :</label></td>
+                    <td><input type="text" id="nm" name="name" required placeholder="enter name"></td>                
+                </tr>
+                <tr>
+                    <td>
+                        <label for="id">Employee ID :</label>                    
+                    </td>
+                    <td>
+                        <input type="text" id="id" name="id" required placeholder="enter ID">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dept">Department:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="ad" name="id"><label for="ad">Admin</label><br>
+                        <input type="radio" id="hr" name="id"><label for="hr">HR</label><br>
+                        <input type="radio" id="tech" name="id"><label for="tech">Technical</label><br>
+                        <input type="radio" id="ac" name="id"><label for="ac">Accounts</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of joining :</td>
+                    <td><input type="text" size="2"><b>/</b><input type="text" size="2"><b>/</b><input type="text" size="2"><br>
+                           &nbsp;&nbsp;&nbsp;&nbsp; dd/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mm/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyy</td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><textarea cols="20" rows="6" resize="0" ></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tp">Training Programs attended:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="ad" name="tp"><label for="ad">NODE/EXPRESS JS</label><br>
+                        <input type="checkbox" id="hr" name="tp"><label for="hr">JAVA</label><br>
+                        <input type="checkbox" id="tech" name="tp"><label for="tech">SERVLET</label><br>
+                        <input type="checkbox" id="ac" name="tp"><label for="ac">REACT</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nm">Training Programs need to attend:</label>
+                    </td>
+                    <td>
+                        <select name="tpa" id="tpn" size="2">
+                            <option value="">JAVASCRIPT</option>
+                            <option value="">JSRTUTS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Send the info at :</td>
+                    <td><a href="mailto:www.youtube.com">empinfo@patni.com</a></td>
+                </tr>
+
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>
